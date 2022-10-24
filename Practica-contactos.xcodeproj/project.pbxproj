@@ -12,6 +12,8 @@
 		3D1C0FB22906E2E000EA0330 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D1C0FB02906E2E000EA0330 /* Main.storyboard */; };
 		3D1C0FB42906E2E400EA0330 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D1C0FB32906E2E400EA0330 /* Assets.xcassets */; };
 		3D1C0FB72906E2E400EA0330 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D1C0FB52906E2E400EA0330 /* LaunchScreen.storyboard */; };
+		3D1C0FBF2906E7FB00EA0330 /* contactos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1C0FBE2906E7FB00EA0330 /* contactos.swift */; };
+		3D1C0FC12906E8EA00EA0330 /* CeldaContactoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1C0FC02906E8EA00EA0330 /* CeldaContactoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		3D1C0FB32906E2E400EA0330 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D1C0FB62906E2E400EA0330 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D1C0FB82906E2E400EA0330 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D1C0FBE2906E7FB00EA0330 /* contactos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactos.swift; sourceTree = "<group>"; };
+		3D1C0FC02906E8EA00EA0330 /* CeldaContactoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaContactoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				3D1C0FB32906E2E400EA0330 /* Assets.xcassets */,
 				3D1C0FB52906E2E400EA0330 /* LaunchScreen.storyboard */,
 				3D1C0FB82906E2E400EA0330 /* Info.plist */,
+				3D1C0FBE2906E7FB00EA0330 /* contactos.swift */,
+				3D1C0FC02906E8EA00EA0330 /* CeldaContactoController.swift */,
 			);
 			path = "Practica-contactos";
 			sourceTree = "<group>";
@@ -135,6 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D1C0FC12906E8EA00EA0330 /* CeldaContactoController.swift in Sources */,
+				3D1C0FBF2906E7FB00EA0330 /* contactos.swift in Sources */,
 				3D1C0FAF2906E2E000EA0330 /* ViewController.swift in Sources */,
 				3D1C0FAD2906E2E000EA0330 /* AppDelegate.swift in Sources */,
 			);
