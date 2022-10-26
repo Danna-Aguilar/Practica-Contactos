@@ -23,7 +23,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="66" id="UJc-eV-gI7" customClass="CeldaContactoController" customModule="Practica_contactos" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Celdacontacto" rowHeight="66" id="UJc-eV-gI7" customClass="CeldaContactoController" customModule="Practica_contactos" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="66"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UJc-eV-gI7" id="INb-UW-ykf">
@@ -31,14 +31,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HxV-TL-31R">
-                                                    <rect key="frame" x="15" y="11" width="62" height="21"/>
+                                                    <rect key="frame" x="15" y="11" width="345" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Telefono" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKO-Di-ba7">
-                                                    <rect key="frame" x="15" y="34" width="66" height="21"/>
+                                                    <rect key="frame" x="15" y="34" width="345" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -52,6 +52,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="KsR-Mo-zao"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ddp-3H-qfS"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -61,18 +65,19 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="AqW-fZ-Y5J"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="tvContactos" destination="tYS-gk-BgC" id="Z3v-HR-bLW"/>
                         <segue destination="Kqc-MQ-1ey" kind="show" identifier="toGoAgregar" id="fOa-Od-CXT"/>
                         <segue destination="29p-N4-mzV" kind="show" identifier="toGoEditar" id="zNX-P2-a5G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="119" y="119"/>
+            <point key="canvasLocation" x="117.59999999999999" y="118.96551724137932"/>
         </scene>
         <!--Editar Contacto-->
         <scene sceneID="4Mp-3g-OyL">
             <objects>
-                <viewController title="Editar Contacto" id="29p-N4-mzV" sceneMemberID="viewController">
+                <viewController title="Editar Contacto" id="29p-N4-mzV" customClass="EditarContactoController" customModule="Practica_contactos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eBf-bX-DSS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -109,11 +114,18 @@
                                 <rect key="frame" x="291" y="256" width="68" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Actualizar"/>
+                                <connections>
+                                    <action selector="doTapActualizar:" destination="29p-N4-mzV" eventType="touchUpInside" id="cYw-w0-ZxH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="SvW-lk-elJ"/>
                     </view>
+                    <connections>
+                        <outlet property="txtNombre" destination="Nj7-7o-ETs" id="HOn-uF-PcG"/>
+                        <outlet property="txtNumero" destination="W20-SP-ddo" id="BmR-2J-IxB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aEl-Nf-oHv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -122,7 +134,7 @@
         <!--Nuevo Contacto-->
         <scene sceneID="Y1y-2L-gQ2">
             <objects>
-                <viewController title="Nuevo Contacto" id="Kqc-MQ-1ey" sceneMemberID="viewController">
+                <viewController title="Nuevo Contacto" id="Kqc-MQ-1ey" customClass="AgregarContactoController" customModule="Practica_contactos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yed-Kt-NPm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -159,11 +171,18 @@
                                 <rect key="frame" x="304" y="236" width="56" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Guardar"/>
+                                <connections>
+                                    <action selector="doTapAgregar:" destination="Kqc-MQ-1ey" eventType="touchUpInside" id="qFx-0V-bBx"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ylj-Q0-vtl"/>
                     </view>
+                    <connections>
+                        <outlet property="txtNombre" destination="dUp-5N-Ply" id="0Ls-PZ-Oxx"/>
+                        <outlet property="txtNumero" destination="Q3C-HY-XwP" id="rlR-ty-s87"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VmY-fp-fEM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

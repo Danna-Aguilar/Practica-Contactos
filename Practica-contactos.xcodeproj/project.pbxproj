@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D1BE1C629097E960031CCAA /* AgregarContactoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1BE1C529097E960031CCAA /* AgregarContactoController.swift */; };
+		3D1BE1C829097EB20031CCAA /* EditarContactoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1BE1C729097EB20031CCAA /* EditarContactoController.swift */; };
 		3D1C0FAD2906E2E000EA0330 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1C0FAC2906E2E000EA0330 /* AppDelegate.swift */; };
 		3D1C0FAF2906E2E000EA0330 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1C0FAE2906E2E000EA0330 /* ViewController.swift */; };
 		3D1C0FB22906E2E000EA0330 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D1C0FB02906E2E000EA0330 /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D1BE1C529097E960031CCAA /* AgregarContactoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgregarContactoController.swift; sourceTree = "<group>"; };
+		3D1BE1C729097EB20031CCAA /* EditarContactoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarContactoController.swift; sourceTree = "<group>"; };
 		3D1C0FA92906E2E000EA0330 /* Practica-contactos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Practica-contactos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D1C0FAC2906E2E000EA0330 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D1C0FAE2906E2E000EA0330 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +70,8 @@
 				3D1C0FB82906E2E400EA0330 /* Info.plist */,
 				3D1C0FBE2906E7FB00EA0330 /* contactos.swift */,
 				3D1C0FC02906E8EA00EA0330 /* CeldaContactoController.swift */,
+				3D1BE1C529097E960031CCAA /* AgregarContactoController.swift */,
+				3D1BE1C729097EB20031CCAA /* EditarContactoController.swift */,
 			);
 			path = "Practica-contactos";
 			sourceTree = "<group>";
@@ -142,9 +148,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D1C0FC12906E8EA00EA0330 /* CeldaContactoController.swift in Sources */,
+				3D1BE1C629097E960031CCAA /* AgregarContactoController.swift in Sources */,
 				3D1C0FBF2906E7FB00EA0330 /* contactos.swift in Sources */,
 				3D1C0FAF2906E2E000EA0330 /* ViewController.swift in Sources */,
 				3D1C0FAD2906E2E000EA0330 /* AppDelegate.swift in Sources */,
+				3D1BE1C829097EB20031CCAA /* EditarContactoController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
