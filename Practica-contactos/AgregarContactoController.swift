@@ -25,6 +25,7 @@ class AgregarContactoController: UIViewController {
     @IBAction func doTapAgregar(_ sender: Any) {
         if callBackAgregarContacto != nil {
             Contacto = contactos(nombre: txtNombre.text ?? "nombre", numero: txtNumero.text ?? "numero")
+            callBackAgregarContacto!(Contacto!)
             self.navigationController?.popViewController(animated: true)
         
         }

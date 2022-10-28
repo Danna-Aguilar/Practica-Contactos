@@ -49,6 +49,7 @@
                                         <connections>
                                             <outlet property="lblNombre" destination="HxV-TL-31R" id="CsR-fN-def"/>
                                             <outlet property="lblNumero" destination="oKO-Di-ba7" id="DIg-Kb-aMh"/>
+                                            <segue destination="29p-N4-mzV" kind="show" identifier="toGoEditar" id="QoZ-Wn-m2A"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -62,12 +63,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Contactos" id="EgU-fX-5b1">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="AqW-fZ-Y5J"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="AqW-fZ-Y5J">
+                            <connections>
+                                <segue destination="Kqc-MQ-1ey" kind="show" identifier="toGoAgregar" id="iWd-wk-aQh"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="tvContactos" destination="tYS-gk-BgC" id="Z3v-HR-bLW"/>
-                        <segue destination="Kqc-MQ-1ey" kind="show" identifier="toGoAgregar" id="fOa-Od-CXT"/>
-                        <segue destination="29p-N4-mzV" kind="show" identifier="toGoEditar" id="zNX-P2-a5G"/>
+                        <outlet property="tvContactos" destination="tYS-gk-BgC" id="W3p-5Z-X8a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

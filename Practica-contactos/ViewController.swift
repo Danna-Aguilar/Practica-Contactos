@@ -40,6 +40,11 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         return celda!
     }
     
+    //@IBAction func btAgregar(_ sender: Any) {
+      //  performSegue(withIdentifier: "toGoAgregar", sender: self)
+        //callBackAgregarContacto = AgregarContacto
+        
+    //}
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "toGoAgregar" {
